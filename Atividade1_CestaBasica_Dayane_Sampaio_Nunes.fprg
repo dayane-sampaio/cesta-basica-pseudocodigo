@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fluxo"/>
+        <attribute name="authors" value="D.S"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-28 06:25:26 "/>
+        <attribute name="created" value="RC5TO0RFU0tUT1AtMVNQUEk4QjsyMDI1LTA5LTIwOyIwNjo1ODoyNiAiOzI0Njk="/>
+        <attribute name="edited" value="RC5TO0RFU0tUT1AtMVNQUEk4QjsyMDI1LTA5LTI4OyIwNjoyNToyNiAiOzQ7MjU4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o nome do produto:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <declare name="Pre&#231;oAnterior" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o anterior:&quot;" newline="True"/>
+            <input variable="Pre&#231;oAnterior"/>
+            <declare name="Pre&#231;oAtual" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o atual:&quot;" newline="True"/>
+            <input variable="Pre&#231;oAtual"/>
+            <output expression="Pre&#231;oAtual * 2" newline="True"/>
+            <declare name="variacao" type="Real" array="False" size=""/>
+            <assign variable="variacao" expression="((Pre&#231;oAtual - Pre&#231;oAnterior)/Pre&#231;oAnterior)*100"/>
+            <declare name="situacao" type="String" array="False" size=""/>
+            <if expression="variacao &gt; 0">
+                <then>
+                    <assign variable="situacao" expression="&quot;AUMENTO&quot;"/>
+                    <if expression="variacao &gt; 10">
+                        <then>
+                            <assign variable="situacao" expression="&quot;AUMENTO ABUSVO&quot;"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="variacao &lt; 0">
+                        <then>
+                            <assign variable="situacao" expression="&quot;QUEDA&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="situacao" expression="&quot;EST&#193;VEL&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Produto: &quot; &amp; nome" newline="True"/>
+            <output expression="&quot;Pre&#231;o Anterior: &quot; &amp; Pre&#231;oAnterior" newline="True"/>
+            <output expression="&quot;Pre&#231;o Atual: &quot; &amp; Pre&#231;oAtual" newline="True"/>
+            <output expression="&quot;Varia&#231;&#227;o Percentual: &quot; &amp; variacao &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;Situa&#231;&#227;o: &quot; &amp; situacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
