@@ -29,7 +29,7 @@ O algoritmo:
 
 ## 🚀 Ferramentas utilizadas
 - [Flowgorithm](http://flowgorithm.org) – criação e execução do fluxograma  
-- Microsoft Word – compilação dos prints e documentação em PDF  
+- Microsoft Word – compilação dos prints e documentação em PDF 
 
 ---
 📄 **Autora:** Dayane Sampaio Nunes
