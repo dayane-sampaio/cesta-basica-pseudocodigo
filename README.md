@@ -33,6 +33,3 @@ O algoritmo:
 
 ---
 📄 **Autora:** Dayane Sampaio Nunes
-
----
-📄 **Autora:** Dayane Sampaio Nunes
